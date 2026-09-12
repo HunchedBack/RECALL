@@ -1,4 +1,6 @@
 import { useState } from "react"
+import  Welcome  from "./Welcome"
+import NameChanger from "./NameChanger";
 
 function App() {
     const [number, setNumber] = useState(0);
@@ -17,8 +19,9 @@ function App() {
       <p className="text-slate-100 text-xl">The random number is: {number}</p>
     </div>
 
-  <p className="fahmy">Fahmy ♥ Jody</p>
-
+            <p className="fahmy">Fahmy ♥ Jody</p>
+          <Welcome name="Justin" />
+          <NameChanger />
   </div>
     )
   }
