@@ -1,29 +1,12 @@
-import { useState } from "react"
-import  Welcome  from "./Welcome"
-import NameChanger from "./NameChanger";
-
+import React from 'react'
+import BoxTable from './TriageTable'
 function App() {
-    const [number, setNumber] = useState(0);
-    function handleClick() {
-      alert("Fahmy ♥ KIMI");
-      setNumber(Math.floor(Math.random() * 100));
-      
-  }
-  return (
-  <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center gap-4">
 
-    <div className="flex items-center gap-4">
-      <button onClick={handleClick} className="px-4 py-2 bg-emerald-500 text-slate-900 font-semibold rounded">
-        Randomiser
-              </button>
-      <p className="text-slate-100 text-xl">The random number is: {number}</p>
-    </div>
-
-            <p className="fahmy">Fahmy ♥ Jody</p>
-          <Welcome name="Justin" />
-          <NameChanger />
-  </div>
+    return (
+        <div className="justify-center">
+            <BoxTable />
+        </div>
     )
-  }
+}  
 
 export default App
